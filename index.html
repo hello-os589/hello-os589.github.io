@@ -1,16 +1,10 @@
-<html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <script>
-    // 方法 1：屏幕宽度检测
     const isMobileByWidth = window.innerWidth <= 768;
-
-    // 方法 2：User Agent 检测
     const isMobileByUA = /Mobile|Android|iPhone/i.test(navigator.userAgent);
-
-    // 最终判断逻辑
     if (isMobileByWidth || isMobileByUA) {
       document.body.innerHTML = "<h1>手机端内容</h1>";
     } else {
@@ -18,5 +12,3 @@
     }
   </script>
 </body>
-</html>
- 
